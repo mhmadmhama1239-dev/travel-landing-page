@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رحلاتك - استكشف العالم معنا</title>
+    <!-- استدعاء مكتبة Tailwind CSS للتصميم السريع -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- شريط التنقل (Navbar) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold text-blue-600">✈️ رحلاتك</span>
+            </div>
+            <nav class="hidden md:flex gap-8 text-gray-600 font-medium">
+                <a href="#features" class="hover:text-blue-600 transition">المميزات</a>
+                <a href="#about" class="hover:text-blue-600 transition">لماذا نحن؟</a>
+                <a href="#testimonials" class="hover:text-blue-600 transition">آراء العملاء</a>
+                <a href="#contact" class="hover:text-blue-600 transition">احجز الآن</a>
+            </nav>
+            <div>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow-md transition">احجز الآن</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section class="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
+                استكشف أجمل وجهات العالم معنا<br>
+                <span class="text-blue-400">رحلتك القادمة تبدأ هنا</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto mb-10">
+                خدمات تنظيم رحلات سياحية متكاملة، حجوزات طيران، وفنادق بأفضل الأسعار وأعلى معايير الراحة.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition text-lg">احجز رحلتك الآن</a>
+                <a href="#features" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl backdrop-blur-md transition text-lg">اعرف المزيد</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المشكلة (The Problem) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">هل تخطط لسفرتك القادمة وتشعر بالتشتت؟</h2>
+            <p class="text-gray-600 text-lg leading-relaxed">
+                هل تضيع ساعات طويلة في التخطيط للرحلة ومقارنة الأسعار، وتخاف من مفاجآت الحجوزات غير المتوقعة؟ التخطيط للسفر بمفردك قد يكون متعباً ومرهقاً ويأخذ من متعة إجازتك.
+            </p>
+        </div>
+    </section>
+
+    <!-- المميزات والفوائد (Features & Benefits) -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">لماذا تختارنا لرحلتك القادمة؟</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-4xl mb-4">🌟</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">حجوزات مضمونة وسريعة</h3>
+                    <p class="text-gray-600">نتعامل مع أفضل شركات الطيران والفنادق العالمية لضمان راحتك وأمانك.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">أسعار تنافسية</h3>
+                    <p class="text-gray-600">باقات متنوعة تناسب كافة الميزانيات دون المساومة أبداً على جودة الخدمة.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-4xl mb-4">🕒</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">دعم على مدار الساعة</h3>
+                    <p class="text-gray-600">فريق مختص لمساعدتك والإجابة عن استفساراتك طوال فترة سفرك وإقامتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- آراء العملاء (Social Proof) -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12">ماذا قالو عنا؟</h2>
+            <div class="bg-blue-50 p-8 sm:p-10 rounded-2xl shadow-sm border border-blue-100">
+                <p class="text-xl text-gray-700 italic mb-6">
+                    "كانت تجربتي معهم في رحلة صيف هذا العام رائعة جداً، كل شيء كان منظماً بدقة وسلاسة، ولم تواجهنا أي مشكلة طوال الرحلة."
+                </p>
+                <h4 class="font-bold text-blue-600 text-lg">- أحمد م.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج الحجز والتواصل (Contact Form & WhatsApp) -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">جاهز لخوض مغامرتك القادمة؟</h2>
+                <p class="text-gray-400 text-lg">املأ النموذج أدناه وسنتواصل معك خلال دقائق، أو تواصل معنا مباشرة عبر واتساب.</p>
+            </div>
+
+            <!-- نموذج إدخال البيانات -->
+            <form action="#" method="POST" class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 space-y-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">الاسم الكامل</label>
+                    <input type="text" required placeholder="أدخل اسمك هنا" class="w-full px-4 py-3 rounded-xl bg-gray-900 border border-gray-700 text-white focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">رقم الهاتف أو البريد الإلكتروني</label>
+                    <input type="text" required placeholder="00961xxxxxxxx أو بريدك الإلكتروني" class="w-full px-4 py-3 rounded-xl bg-gray-900 border border-gray-700 text-white focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">تفاصيل الرحلة المطلوبة (الوجهة، الموعد)</label>
+                    <textarea rows="4" placeholder="اكتب تفاصيل رحلتك..." class="w-full px-4 py-3 rounded-xl bg-gray-900 border border-gray-700 text-white focus:outline-none focus:border-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-lg transition text-lg">إرسال طلب الحجز</button>
+            </form>
+
+            <!-- زر واتساب العائم / المباشر -->
+            <div class="mt-8 text-center">
+                <a href="https://wa.me/96100000000?text=مرحباً، أهتم بالاستفسار عن الباقات السياحية وحجوزات السفر." target="_blank" class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition text-lg">
+                    <span>💬 تواصل معنا مباشرة عبر واتساب</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل (Footer) -->
+    <footer class="bg-gray-950 text-gray-500 py-8 text-center border-t border-gray-800">
+        <p>جميع الحقوق محفوظة © 2026 - رحلاتك</p>
+    </footer>
+
+</body>
+</html>
